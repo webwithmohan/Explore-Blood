@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Understanding Blood Donation | Explore Blood</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" type="image/png" href="images/blood-drop.jpg">
+</head>
+<body>
+
+  <!-- Main Website Wrapper -->
+  <div class="main-wrapper">
+
+    <!-- ======================================================================
+         1. SITE HEADER (Common across all pages)
+         ====================================================================== -->
+    <header class="site-header">
+      <div class="header-content">
+        <h1 class="site-title"><a href="index.html">Hope in Every Drop</a></h1>
+        <p class="site-tagline">Donate Blood, Save Lives, Be Someone's Hope.</p>
+      </div>
+    </header>
+
+    <!-- ======================================================================
+         2. NAVIGATION MENU (Horizontal & Responsive Pure CSS)
+         ====================================================================== -->
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        MENU <span class="menu-icon">&#9776;</span>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blood-donation.html" class="active">Blood Donation</a></li>
+        <li><a href="donor-tips.html">Donor Tips</a></li>
+        <li><a href="assets/blood_donor_handbook.pdf" target="_blank">Donor Handbook (PDF)</a></li>
+      </ul>
+    </nav>
+
+    <!-- ======================================================================
+         3. TWO-COLUMN LAYOUT (Main Content + Sidebar)
+         ====================================================================== -->
+    <div class="layout-container clearfix">
+
+      <!-- MAIN SECTION (Left Column) -->
+      <main class="main-content">
+        
+        <!-- Main Heading -->
+        <section>
+          <h1>Understanding Blood Donation</h1>
+          <p>
+            Blood donation is a compassionate, voluntary clinical procedure in which a healthy person has blood drawn for subsequent testing, component separation, and transfusion into individuals facing medical emergencies or chronic illnesses. Below is a comprehensive guide to understanding how this miraculous procedure operates, from donation types to biological compatibility.
+          </p>
+        </section>
+
+        <!-- 1. What is Blood Donation? -->
+        <section>
+          <h2>1. What is Blood Donation?</h2>
+          <p>
+            At its core, blood donation is the voluntary gift of healthy blood collected by licensed phlebotomists using sterilized, disposable needles and collection bags. Donated blood is carefully screened for infectious markers and divided into vital clinical components before reaching hospital wards.
+          </p>
+          <div class="alert-box">
+            <h3>Interesting Fact:</h3>
+            <p>
+              An average adult human body contains approximately 4.5 to 5.5 liters of blood. A typical whole-blood donation removes only about 450 mL&mdash;which the body completely replenishes fluid-wise within 24 to 48 hours!
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. Importance of Blood Donation -->
+        <section>
+          <h2>2. Importance of Blood Donation</h2>
+          <p>
+            Modern healthcare relies heavily on blood reserves for countless emergency procedures, including complex cardiac surgeries, organ transplantations, severe burn management, sickle-cell disease management, and emergency neonatal transfusions.
+          </p>
+          <figure class="content-figure">
+            <img src="images/blood-bank.jpg" alt="Certified Blood Bank Cold Chain Storage">
+            <figcaption>Figure 1: High-precision refrigerated storage units ensure that red cells, platelets, and fresh frozen plasma remain chemically viable for patients in need.</figcaption>
+          </figure>
+          <div class="alert-box">
+            <h3>Interesting Fact:</h3>
+            <p>
+              Every two seconds, someone in the world requires blood. Just three teaspoons of donated blood can be enough to sustain the life of a premature newborn baby.
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. Different Blood Groups -->
+        <section>
+          <h2>3. Different Blood Groups</h2>
+          <p>
+            Human blood is grouped based on the presence or absence of specific protein markers called antigens (A and B) and the Rh (Rhesus) factor on the surface of red blood cells. This yields the eight standard blood groups:
+          </p>
+
+          <figure class="content-figure">
+            <img src="images/blood-groups.jpg" alt="Blood Group Compatibility Infographic">
+            <figcaption>Figure 2: The eight fundamental blood types and their universal donor/recipient classifications.</figcaption>
+          </figure>
+
+          <div class="cards-grid">
+            <article class="info-card">
+              <h3>Type O: The Universal Red Cell</h3>
+              <p>
+                <strong>O-Negative</strong> red blood cells contain neither A, B, nor Rh antigens, making them safe for transfusion into any emergency patient regardless of recipient blood type.
+              </p>
+            </article>
+
+            <article class="info-card">
+              <h3>Type AB: Universal Recipient</h3>
+              <p>
+                <strong>AB-Positive</strong> patients have all antigens and can safely receive red blood cells from any blood type. Furthermore, AB individuals are the <em>universal plasma donors</em>.
+              </p>
+            </article>
+          </div>
+
+          <!-- Medical Responsibility Notice as required -->
+          <div class="alert-box" style="border-left-color: #0284c7; background-color: #f0f9ff;">
+            <h3 style="color: #0369a1;">Responsible Medical Disclaimer</h3>
+            <p>
+              <strong>Important Note:</strong> Blood compatibility and clinical donor eligibility are determined exclusively by qualified blood-bank professionals and certified physicians through rigorous cross-matching tests. Never self-determine your suitability for a patient without professional clinical consultation.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4. Types of Blood Donation -->
+        <section>
+          <h2>4. Types of Blood Donation</h2>
+          <p>
+            Donors can contribute blood in multiple specialized formats based on blood center needs:
+          </p>
+          <ul class="styled-list">
+            <li><strong>Whole Blood Donation:</strong> The most common type. Approximately 450 mL of full blood is drawn and later separated into red cells, plasma, and platelets. (Interval: Every 56 days).</li>
+            <li><strong>Power Red (Double Red Cells):</strong> An automated apheresis machine collects two concentrated units of red blood cells while safely returning the plasma and platelets back to the donor. (Interval: Every 112 days).</li>
+            <li><strong>Platelet Apheresis:</strong> The machine separates and collects only clotting platelets, which are critically needed by cancer chemotherapy patients. (Interval: Every 7 days, up to 24 times a year).</li>
+            <li><strong>Plasma Donation (AB Elite):</strong> Plasma is collected via apheresis to treat burn victims, trauma shock, and hemophilia. (Interval: Every 28 days).</li>
+          </ul>
+        </section>
+
+        <!-- 5. Blood Donation Process -->
+        <section>
+          <h2>5. The Blood Donation Process</h2>
+          <p>
+            The entire experience takes roughly 45 minutes, while the actual blood draw takes only 8 to 10 minutes:
+          </p>
+          <figure class="content-figure">
+            <img src="images/donation-process.jpg" alt="Step-by-Step Blood Donation Process">
+            <figcaption>Figure 3: The 4-step workflow: Registration, Mini-Physical, Donation, and Recovery Refreshments.</figcaption>
+          </figure>
+          <ol class="styled-list">
+            <li><strong>Registration:</strong> Present valid government identification and complete a confidential health history questionnaire.</li>
+            <li><strong>Mini-Physical Checkup:</strong> A healthcare worker confirms your temperature, blood pressure, pulse, and hemoglobin concentration.</li>
+            <li><strong>Blood Donation:</strong> You recline comfortably while a sterile, single-use needle collects blood safely.</li>
+            <li><strong>Rest and Refreshments:</strong> You relax for 10 to 15 minutes enjoying fruit juice and light snacks to restore energy.</li>
+          </ol>
+        </section>
+
+        <!-- 6. Who Can Donate Blood? -->
+        <section>
+          <h2>6. Who Can Donate Blood?</h2>
+          <p>
+            Most healthy individuals can become voluntary donors provided they satisfy these standard criteria:
+          </p>
+          <ul class="styled-list">
+            <li><strong>Age Requirement:</strong> Between 18 and 65 years old (some jurisdictions permit 16-17 with parental consent).</li>
+            <li><strong>Body Weight:</strong> Must weigh at least 50 kg (110 pounds).</li>
+            <li><strong>Hemoglobin Count:</strong> Minimum 12.5 g/dL for females and 13.0 g/dL for males.</li>
+            <li><strong>General Well-being:</strong> Feeling fit, well-rested, and free from acute fevers, respiratory infections, or cold symptoms on the donation day.</li>
+          </ul>
+        </section>
+
+        <!-- 7. Benefits of Voluntary Blood Donation -->
+        <section>
+          <h2>7. Benefits of Voluntary Blood Donation</h2>
+          <div class="cards-grid">
+            <article class="info-card">
+              <h3>Regular Health Screening</h3>
+              <p>
+                Each donation provides an on-the-spot screening of your vital metrics, helping identify early indicators of elevated blood pressure or borderline hemoglobin levels.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Caloric and Cellular Refresh</h3>
+              <p>
+                The human body burns roughly 600 calories synthesizing new red blood cells after donation, stimulating natural hematopoietic stem-cell renewal.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 8. Myths and Facts About Blood Donation -->
+        <section>
+          <h2>8. Myths and Facts About Blood Donation</h2>
+          <div class="alert-box">
+            <h3>Myth 1: Donating blood is extremely painful.</h3>
+            <p>
+              <strong>Fact:</strong> You only feel a minor brief pinch when the sterile needle is inserted for one second. The remaining 8 minutes of collection are completely painless.
+            </p>
+          </div>
+
+          <div class="alert-box">
+            <h3>Myth 2: Donating blood can cause infectious diseases like HIV.</h3>
+            <p>
+              <strong>Fact:</strong> It is 100% impossible to contract any infection from donating blood. Every needle, tube, and collection pouch is brand new, factory-sterile, and discarded immediately after a single use.
+            </p>
+          </div>
+
+          <div class="alert-box">
+            <h3>Myth 3: You will become weak and exhausted for days.</h3>
+            <p>
+              <strong>Fact:</strong> Donating removes less than 10% of your total blood volume. Your plasma volume returns to normal within 24 hours simply by drinking water and enjoying meals.
+            </p>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- SIDEBAR (Right Column) -->
+      <aside class="sidebar-content">
+
+        <!-- Navigation Links Back to Home & Donor Tips -->
+        <div class="sidebar-widget">
+          <h3>Explore Our Pages</h3>
+          <ul class="sidebar-links">
+            <li><a href="index.html">&larr; Return to Home Page</a></li>
+            <li><a href="donor-tips.html">&rarr; Essential Donor Tips &amp; Checklist</a></li>
+          </ul>
+        </div>
+
+        <!-- Blood Group Categories -->
+        <div class="sidebar-widget">
+          <h3>Blood Group Categories</h3>
+          <ul class="styled-list" style="margin-left: 15px; font-size: 0.9rem;">
+            <li><strong>Group O:</strong> Lacks A and B antigens.</li>
+            <li><strong>Group A:</strong> Has A antigen on red cells.</li>
+            <li><strong>Group B:</strong> Has B antigen on red cells.</li>
+            <li><strong>Group AB:</strong> Has both A and B antigens.</li>
+            <li><strong>Rh Positive (+):</strong> Rh factor present.</li>
+            <li><strong>Rh Negative (-):</strong> Rh factor absent.</li>
+          </ul>
+        </div>
+
+        <!-- Important Blood Donation Facts -->
+        <div class="sidebar-widget">
+          <h3>Crucial Donation Facts</h3>
+          <ul class="styled-list" style="margin-left: 15px; font-size: 0.9rem;">
+            <li><strong>1 in 7:</strong> Hospitalized patients will require blood during their admission.</li>
+            <li><strong>4.5 Liters:</strong> Average blood volume in an adult human body.</li>
+            <li><strong>42 Days:</strong> Maximum shelf-life of refrigerated red blood cells.</li>
+          </ul>
+        </div>
+
+        <!-- Short Awareness Message -->
+        <div class="sidebar-widget">
+          <h3>Awareness Message</h3>
+          <p style="font-size: 0.9rem;">
+            &ldquo;Tears of a mother cannot save her sick child, but your blood can. Step up and be someone&rsquo;s silent hero today.&rdquo;
+          </p>
+        </div>
+
+        <!-- Emergency Helpline Widget -->
+        <div class="helpline-box">
+          <h4>Need Blood In An Emergency?</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0;">24/7 Verified Donor Registry:</p>
+          <span class="helpline-number">1800-BLOOD-HOPE</span>
+        </div>
+
+      </aside>
+
+    </div><!-- End of layout-container -->
+
+    <!-- ======================================================================
+         4. SITE FOOTER (Common across all pages)
+         ====================================================================== -->
+    <footer class="site-footer">
+      <div class="footer-nav">
+        <a href="index.html">Home</a> &bull;
+        <a href="blood-donation.html">Blood Donation</a> &bull;
+        <a href="donor-tips.html">Donor Tips</a>
+      </div>
+      <p>&copy; 2026 Explore Blood. All rights reserved.</p>
+      <p class="footer-note">Student Blood Donation Awareness Website.</p>
+    </footer>
+
+  </div><!-- End of main-wrapper -->
+
+</body>
+</html>
