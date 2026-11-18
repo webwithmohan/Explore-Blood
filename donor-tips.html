@@ -7,6 +7,7 @@
   
   <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="styles/normalize.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" type="image/png" href="images/blood-drop.jpg">
 </head>
@@ -62,55 +63,63 @@
           </figure>
         </section>
 
-        <!-- Pure CSS Interactive Carousel (Zero JavaScript) -->
+        <!-- Bootstrap Interactive Carousel -->
         <section>
           <h2>Interactive Donation Care &amp; Clinic Showcase</h2>
           <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 8px;">
             <em>Click the navigation dots below to explore our clinical stations and voluntary donor impact:</em>
           </p>
 
-          <div class="css-carousel-container">
-            <!-- Radio inputs for Pure CSS slide switching -->
-            <input type="radio" name="carousel" id="slide1" class="carousel-radio" checked>
-            <input type="radio" name="carousel" id="slide2" class="carousel-radio">
-            <input type="radio" name="carousel" id="slide3" class="carousel-radio">
-            <input type="radio" name="carousel" id="slide4" class="carousel-radio">
-
-            <!-- Slides Track -->
-            <div class="carousel-slides">
-              <div class="carousel-slide">
-                <img src="images/blood-donation.jpg" alt="Clinical Phlebotomy Lounge">
-                <div class="slide-caption">
+          <div id="donationCarousel" class="carousel slide my-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#donationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#donationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#donationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#donationCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner rounded shadow">
+              <div class="carousel-item active">
+                <div class="ratio ratio-16x9">
+                  <img src="images/blood-donation.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Clinical Phlebotomy Lounge">
+                </div>
+                <div class="carousel-caption d-block">
                   <strong>Station 1 &bull; Phlebotomy Lounge:</strong> Ergonomic recliners and sterile disposable kits ensure maximum donor comfort.
                 </div>
               </div>
-              <div class="carousel-slide">
-                <img src="images/blood-bank.jpg" alt="Cold Chain Storage Freezers">
-                <div class="slide-caption">
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <img src="images/blood-bank.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Cold Chain Storage Freezers">
+                </div>
+                <div class="carousel-caption d-block">
                   <strong>Station 2 &bull; Cold-Chain Banking:</strong> Temperature-monitored freezers and platelet agitators preserve life-saving units.
                 </div>
               </div>
-              <div class="carousel-slide">
-                <img src="images/healthcare.jpg" alt="Certified Medical Transfusion Staff">
-                <div class="slide-caption">
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <img src="images/healthcare.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Certified Medical Transfusion Staff">
+                </div>
+                <div class="carousel-caption d-block">
                   <strong>Station 3 &bull; Clinical Standards:</strong> Certified hematologists and nurses maintain stringent safety protocols.
                 </div>
               </div>
-              <div class="carousel-slide">
-                <img src="images/save-lives.jpg" alt="1 Donation Saves 3 Lives">
-                <div class="slide-caption">
+              <div class="carousel-item">
+                <div class="ratio ratio-16x9">
+                  <img src="images/save-lives.jpg" class="d-block w-100 h-100 object-fit-cover" alt="1 Donation Saves 3 Lives">
+                </div>
+                <div class="carousel-caption d-block">
                   <strong>Station 4 &bull; Community Impact:</strong> Every voluntary donation directly sustains up to three emergency patients.
                 </div>
               </div>
             </div>
 
-            <!-- Indicator Navigation Dots -->
-            <div class="carousel-indicators">
-              <label for="slide1" class="carousel-indicator-dot" title="Phlebotomy Lounge"></label>
-              <label for="slide2" class="carousel-indicator-dot" title="Cold Chain Banking"></label>
-              <label for="slide3" class="carousel-indicator-dot" title="Clinical Staff"></label>
-              <label for="slide4" class="carousel-indicator-dot" title="Lifesaving Impact"></label>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#donationCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#donationCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </section>
 
@@ -341,5 +350,6 @@
 
   </div><!-- End of main-wrapper -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
